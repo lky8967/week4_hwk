@@ -37,6 +37,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         this.headerTokenExtractor = headerTokenExtractor;
     }
 
+
+    // password 받아서 암호화 시켜서 저장
     @Bean
     public BCryptPasswordEncoder encodePassword() {
         return new BCryptPasswordEncoder();
